@@ -226,16 +226,6 @@ public abstract class DriveSystem3075 extends Subsystem implements Sendable
 		rightPID.setAbsoluteTolerance(velocityTolerance);
 	}
 	
-	/**
-	 * sets the tolerance for the distance
-	 * @param tolerance - the tolerance to set
-	 */
-	public void setTolerance(double tolerance) 
-	{
-		rightMP.setTolerance(tolerance);
-		leftMP.setTolerance(tolerance);
-	}
-	
 	public double getAngle()
 	{
 		return (leftEncoder.getDistance() - rightEncoder.getDistance()) / (2 * distancePerAngle);
@@ -281,11 +271,6 @@ public abstract class DriveSystem3075 extends Subsystem implements Sendable
 	public double getLeftMaxV()
 	{
 		return leftMaxV;
-	}
-
-	public double getDistanceTolerance() 
-	{
-		return rightMP.getTolerance();
 	}
 	
 	public DrivingState getState(){
