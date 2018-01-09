@@ -3,7 +3,6 @@ package LibPurple.systems;
 
 import org.usfirst.frc.team3075.robot.Robot;
 
-import LibPurple.control.MPController.MPValue;
 import LibPurple.control.PIDvalue;
 import LibPurple.sensors.ConsoleJoystick;
 import LibPurple.sensors.Encoder3075;
