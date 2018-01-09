@@ -21,8 +21,6 @@ import edu.wpi.first.wpilibj.tables.ITable;
 /***
  * Initialization example:
  * super.setPIDValues(...);
- * super.setMPValues(...);
- * super.setTurnMPValues(...);
  * super.setVelocityTolerance(...);
  * super.setDistanceTolerance(...);
  * super.distancePerAngle = ...
